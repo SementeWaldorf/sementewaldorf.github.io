@@ -1,14 +1,27 @@
 ---
 layout: front
 ---
-  
 
     <div class="small-8 small-centered column">
-      <h1>Semente é uma escola foda pra crianças fodas</h1>
+      <h1>Semente: um jardim Waldorf que está se reconstruindo</h1>
     </div>
 
-    <div class="row expanded">
-      <img src="etc/img/escola.jpg" alt="">
-    </div>
+ 
+    {% for post in site.posts %}
+
+        <div class="row expanded">
+          <img src="{{ site.baseurl }}/etc/img/{{ post.image }}">
+        </div>
+        <div class="row">
+          <div class="small-8 small-centered columns">
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+            <p><a href="{{ post.url | prepend: site.baseurl }}">Continue lendo…</a></p>
+          </div>
+        </div>
+  
+
+    {% endfor %}
+
 
     

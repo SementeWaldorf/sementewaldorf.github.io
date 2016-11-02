@@ -1,11 +1,9 @@
 <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
-<div class="ck_form_container ck_inline" data-ck-version="6">
-  <div class="ck_form ck_naked">
-  <div class="ck_form_fields">
+
     <div id="ck_success_msg" style="display:none;">
       <p>Obrigado por se inscrever!
 
-Você vai receber um email com um botão vermelho para confirmar sua inscrição.</p>
+      Você vai receber um email com um botão vermelho para confirmar sua inscrição.</p>
     </div>
 
     <!--  Form starts here  -->
@@ -19,22 +17,26 @@ Você vai receber um email com um botão vermelho para confirmar sua inscrição
         </div>
       </div>
       
-      <div class="ck_control_group ck_email_field_group">
-        <label class="ck_label" for="ck_emailField" style="display: none">Meu email é</label>
-        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" placeholder="Meu nome é">
-        <input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Meu email é" required>
-      </div>
-      <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">
-        <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
-      </div>
+      <div class="row">
+          <label for="ck_emailField" style="display: none">Meu email é</label>
+          
+          <div class="small-5 columns">
+            <input type="text" name="first_name" id="ck_firstNameField" placeholder="Meu nome é">
+          </div>
+          
+          <div class="small-5 columns">
+            <input type="email" name="email" id="ck_emailField" placeholder="Meu email é" required>
+          </div>
 
-
-      <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
-        Quero saber da Semente
-      </button>
+        
+        <div style="position: absolute !important;left: -999em !important;">
+          <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
+        </div>
+        
+        <div class="small-2 columns">
+          <button type="button" class="alert button" id="ck_subscribe_button">
+            Quero saber da Semente
+          </button>
+        </div>
+      </div>
     </form>
-  </div>
-
-</div>
-
-</div>

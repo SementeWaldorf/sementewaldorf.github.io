@@ -1,12 +1,17 @@
 <body>
+  <div class="row expanded">
     <div class="top-bar">
        <div class="large-8 large-centered column">
-         <div class="top-bar-title"><img src="etc/img/logo.png" alt="Semente"></div>
+         <div class="top-bar-title"><a href="{{ site.baseurl }}/"><img src="etc/img/logo.png" alt="Semente"></a></div>
            <div class="top-bar-right">
              <ul class="menu">
-               <li><a href="#estamos">Uma breve história</a></li>
-               <li><a href="#acontece">O Movimento</a></li>
+               {% for page in site.pages %}
+                  {% if page.title %}
+                      <li><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a></li>
+                  {% endif %}
+              {% endfor %}
              </ul>
            </div>
          </div>
     </div>
+  </div>
