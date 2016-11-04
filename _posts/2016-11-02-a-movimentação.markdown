@@ -1,6 +1,6 @@
 ---
 title: A movimentação
-layout: default
+layout: post
 image: joao.jpg
 ---
 

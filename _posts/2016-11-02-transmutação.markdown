@@ -1,6 +1,6 @@
 ---
 title: Transmutação
-layout: default
+layout: post
 image: escola.jpg
 ---
 

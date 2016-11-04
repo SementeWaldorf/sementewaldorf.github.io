@@ -2,9 +2,6 @@
 layout: front
 ---
 
-    <div class="small-8 small-centered column">
-      <h1>Semente: um jardim Waldorf que está se reconstruindo</h1>
-    </div>
 
  
     {% for post in site.posts %}
@@ -13,7 +10,7 @@ layout: front
           <img src="{{ site.baseurl }}/etc/img/{{ post.image }}">
         </div>
         <div class="row">
-          <div class="small-8 small-centered columns">
+          <div class="medium-8 medium-centered small-10 small-centered columns">
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
             <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
             <p><a href="{{ post.url | prepend: site.baseurl }}">Continue lendo…</a></p>

@@ -1,17 +1,19 @@
 <body>
-  <div class="row expanded">
-    <div class="top-bar">
-       <div class="large-8 large-centered column">
-         <div class="top-bar-title"><a href="{{ site.baseurl }}/"><img src="etc/img/logo.png" alt="Semente"></a></div>
-           <div class="top-bar-right">
-             <ul class="menu">
-               {% for page in site.pages %}
-                  {% if page.title %}
-                      <li><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a></li>
-                  {% endif %}
-              {% endfor %}
-             </ul>
-           </div>
-         </div>
-    </div>
+  <div class="row expanded hero">
+    <nav class="top-bar">
+     <div class="menu-centered"><a href="{{ site.baseurl }}/"><img src="etc/img/logo.png" alt="Semente"></a></div>
+     <div class="top-bar-right">
+       <ul class="menu">
+         {% for page in site.pages %}
+            {% if page.title %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+       </ul>
+     </div>
+    </nav>
+    
+    <h1 class="text-center">A gente precisa resgatar a essência da educação!</h1>  
   </div>
+
+  <div class="row">{% include form.html %}</div>
